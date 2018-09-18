@@ -4,24 +4,11 @@ from mock import Mock, patch
 import requests_mock
 
 from msgraph.client import Client
+from msgraph.sharepoint import Sharepoint
 
-
-def test_client_getToken():
-
-    appId = '535fb089-9ff3-47b6-9bfb-4f1264799865'
-    tenant = 'testTenant'
-    secret = 'qWgdYAmab0YSkuL1qKv5bPX'
-
-    client = Client(appId, tenant, secret)
-
-    shouldBe = 'https://login.microsoftonline.com/testTenant/oauth2/v2.0/token'
-    assert client.getEndpoint('token') == shouldBe
-
-    shouldBe = 'https://login.microsoftonline.com/testTenant/adminconsent'
-    assert client.getEndpoint('adminConsent') == shouldBe
 
 @requests_mock.Mocker()
-def test_getting_token(m):
+def test_getSitesList(m):
 
     appId = '535fb089-9ff3-47b6-9bfb-4f1264799865'
     tenant = 'testTenant'
@@ -29,13 +16,29 @@ def test_getting_token(m):
 
     client = Client(appId, tenant, secret)
 
-    responseData = {"token_type": "Bearer",
-                    "expires_in": 3599,
-                    "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ik1uQ19WWmNBVGZNNXBP..."
-                    }
+    responseData = {"@odata.context": "https://graph.microsoft.com/v1.0/$metadata#sites",
+                    "value": [
+                       {"createdDateTime": "2017-09-15T01:11:50Z",
+                        "description": "Let's capture our thoughts in this subsite blog.",
+                        "id": "m365x214355.sharepoint.com,5a58bb09-1fba-41c1-8125-69da264370a0,5e9767b8-95bc-4bd1-aeb0-d6598e566ec0",
+                        "lastModifiedDateTime": "0001-01-01T08:00:00Z",
+                        "name": "internalblogs",
+                        "webUrl": "https://m365x214355.sharepoint.com/internalblogs",
+                        "displayName": "Internal blog"
+                       }
+                    ]}
+
     responseJson = json.dumps(responseData)
-    m.post(client.getEndpoint('token'), text=responseJson) 
 
-    token = client.getToken()
+    m.get(client.getEndpoint('list_sites'), text=responseJson)
 
-    assert token == responseData
+    sharepoint = Sharepoint(client)
+    sites = sharepoint.getSitesList()
+
+    assert sites[0].siteId == responseData['value'][0]['id']
+    assert sites[0].name == responseData['value'][0]['name']
+    assert sites[0].displayName == responseData['value'][0]['displayName']
+    assert sites[0].description == responseData['value'][0]['description']
+    assert sites[0].webUrl == responseData['value'][0]['webUrl']
+    assert sites[0].lastModifiedDateTime == responseData['value'][0]['lastModifiedDateTime']
+    assert sites[0].createdDateTime == responseData['value'][0]['createdDateTime']
