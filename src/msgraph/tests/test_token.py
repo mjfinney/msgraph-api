@@ -1,3 +1,4 @@
+from datetime import datetime
 import json
 
 from mock import Mock, patch
@@ -38,4 +39,10 @@ def test_getting_token(m):
 
     token = client.getToken()
 
-    assert token == responseData
+    assert token.token_type == responseData.get('token_type')
+    assert token.expires_in == responseData.get('expires_in')
+    assert token.access_token == responseData.get('access_token')
+    assert token.expired == False
+
+    token.expire_date = datetime.now()
+    assert token.expired == True
