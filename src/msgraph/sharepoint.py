@@ -22,6 +22,22 @@ class Sharepoint(object):
 
         return sitesList
 
+    def getSiteById(self, siteId):
+        endpoint = self.client.getEndpoint('site_by_id', siteId=siteId)
+        response = requests.get(endpoint)
+        if response.ok:
+            data = json.loads(response.text)
+            return SharepointSite(**data)
+        return None
+
+    def getSiteByPath(self, sitePath):
+        endpoint = self.client.getEndpoint('site_by_path', sitePath=sitePath)
+        response = requests.get(endpoint)
+        if response.ok:
+            data = json.loads(response.text)
+            return SharepointSite(**data)
+        return None
+
 class SharepointSite(object):
 
     def __init__(self, **kwargs):

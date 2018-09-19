@@ -7,25 +7,29 @@ import requests_mock
 from msgraph.client import Client
 
 
-def test_client_getToken():
+def test_client_getEndpoint():
 
     appId = '535fb089-9ff3-47b6-9bfb-4f1264799865'
-    tenant = 'testTenant'
+    tenant = 'M365x214355.sharepoint.com'
     secret = 'qWgdYAmab0YSkuL1qKv5bPX'
-
+    siteId = "m365x214355.sharepoint.com,f66f0635-cbc1-4695-8c25-d76c20b5f883,73429943-801a-48bd-9ab9-b57b0b4e4f27"
     client = Client(appId, tenant, secret)
 
-    shouldBe = 'https://login.microsoftonline.com/testTenant/oauth2/v2.0/token'
+    shouldBe = 'https://login.microsoftonline.com/M365x214355.sharepoint.com/oauth2/v2.0/token'
     assert client.getEndpoint('token') == shouldBe
 
-    shouldBe = 'https://login.microsoftonline.com/testTenant/adminconsent'
+    shouldBe = 'https://login.microsoftonline.com/M365x214355.sharepoint.com/adminconsent'
     assert client.getEndpoint('adminConsent') == shouldBe
 
+    shouldBe = 'https://login.microsoftonline.com/M365x214355.sharepoint.com/adminconsent'
+    shouldBe = 'https://graph.microsoft.com/v1.0/sites/' + siteId
+    assert client.getEndpoint('site_by_id', siteId=siteId) == shouldBe
+
 @requests_mock.Mocker()
-def test_getting_token(m):
+def test_getToken(m):
 
     appId = '535fb089-9ff3-47b6-9bfb-4f1264799865'
-    tenant = 'testTenant'
+    tenant = 'M365x214355.sharepoint.com'
     secret = 'qWgdYAmab0YSkuL1qKv5bPX'
 
     client = Client(appId, tenant, secret)

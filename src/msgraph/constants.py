@@ -7,5 +7,7 @@ LOGIN_ENDPOINTS = {'adminConsent': '{tenant}/adminconsent',
                    'token': '{tenant}/oauth2/{version}/token',
                    }
 GRAPH_ENDPOINTS = {'sites_root': '',
-                   'list_sites': 'sites?search=*'
+                   'list_sites': 'sites?search=*',
+                   'site_by_id': 'sites/{siteId}',
+                   'site_by_path': 'sites/{tenant}:/sites/{sitePath}',
                    }

@@ -13,16 +13,16 @@ class Client(object):
         self.tenant = tenant
         self.secret = secret
 
-    def getEndpoint(self, path):
+    def getEndpoint(self, path, **kwargs):
         endpoint = GRAPH_ENDPOINTS.get(path)
         if endpoint:
             endpoint = GRAPH_URL + endpoint
-            endpoint = endpoint.format(tenant=self.tenant, version=GRAPH_VERSION)
+            endpoint = endpoint.format(tenant=self.tenant, version=GRAPH_VERSION, **kwargs)
         else:
             endpoint = LOGIN_ENDPOINTS.get(path)
             if endpoint:
                 endpoint = LOGIN_URL + endpoint
-                endpoint = endpoint.format(tenant=self.tenant, version=LOGIN_VERSION)
+                endpoint = endpoint.format(tenant=self.tenant, version=LOGIN_VERSION, **kwargs)
         return endpoint
 
     def getResponse(self, path, data):
