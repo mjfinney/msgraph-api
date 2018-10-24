@@ -12,14 +12,19 @@ class Sharepoint(object):
         self.site = None
 
     def getSitesList(self):
-        sitesList = []
-        response = self.client.getResponse('list_sites')
-        if response.ok:
-            data = json.loads(response.text)
-            for site in data.get('value'):
-                sitesList.append(SharepointSite(client=self.client, **site))
-
-        return sitesList
+        nextpage = 1
+        while nextpage != None:
+            if nextpage == 1:
+                response = self.client.getResponse('list_sites')
+            else:
+                response = self.client.getResponse('next', url=nextpage)
+            if response.ok:
+                data = json.loads(response.text)
+                for site in data.get('value'):
+                    yield SharepointSite(client=self.client, **site)
+                nextpage = data.get('@odata.nextLink')
+            else:
+                nextpage = None
 
     def getSiteById(self, siteId):
         response = self.client.getResponse('site_by_id', siteId=siteId)

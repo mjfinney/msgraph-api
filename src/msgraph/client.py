@@ -31,6 +31,9 @@ class Client(object):
             self.token = self.getToken()
         headers = {'Authorization': self.token.token_type + ' ' + self.token.access_token}
 
+        if endpoint == 'next':
+            return requests.get(kwargs.get('url'), headers=headers)
+
         return requests.get(self.getEndpoint(endpoint, **kwargs),
                             headers=headers)
 

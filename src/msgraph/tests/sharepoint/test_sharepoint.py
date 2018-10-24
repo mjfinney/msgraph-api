@@ -24,14 +24,15 @@ class TestSharepointSites(object):
         with requests_mock.Mocker() as m:
             m.get(sharepoint.client.getEndpoint('list_sites'), text=responseJson)
             sites = sharepoint.getSitesList()
+            site = next(sites)
     
-        assert sites[0].siteId == responseData['value'][0]['id']
-        assert sites[0].name == responseData['value'][0]['name']
-        assert sites[0].displayName == responseData['value'][0]['displayName']
-        assert sites[0].description == responseData['value'][0]['description']
-        assert sites[0].webUrl == responseData['value'][0]['webUrl']
-        assert sites[0].lastModifiedDateTime == responseData['value'][0]['lastModifiedDateTime']
-        assert sites[0].createdDateTime == responseData['value'][0]['createdDateTime']
+        assert site.siteId == responseData['value'][0]['id']
+        assert site.name == responseData['value'][0]['name']
+        assert site.displayName == responseData['value'][0]['displayName']
+        assert site.description == responseData['value'][0]['description']
+        assert site.webUrl == responseData['value'][0]['webUrl']
+        assert site.lastModifiedDateTime == responseData['value'][0]['lastModifiedDateTime']
+        assert site.createdDateTime == responseData['value'][0]['createdDateTime']
     
     def test_getSiteById(self, sharepoint, site_data):
     
