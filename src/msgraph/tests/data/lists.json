@@ -1,0 +1,367 @@
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#sites('m365x214355.sharepoint.com%2Cf66f0635-cbc1-4695-8c25-d76c20b5f883%2C73429943-801a-48bd-9ab9-b57b0b4e4f27')/lists",
+    "value": [
+        {
+            "@odata.etag": "\"73a5d3d3-1eb0-4ec5-a99e-80825e9f7b06,0\"",
+            "createdDateTime": "2017-07-31T16:29:15Z",
+            "description": "Use this list to track upcoming events, status updates or other team news.",
+            "eTag": "\"73a5d3d3-1eb0-4ec5-a99e-80825e9f7b06,0\"",
+            "id": "73a5d3d3-1eb0-4ec5-a99e-80825e9f7b06",
+            "lastModifiedDateTime": "2017-08-06T02:49:37Z",
+            "name": "Announcements",
+            "webUrl": "https://m365x214355.sharepoint.com/sites/contoso/Departments/SM/MarketingDocuments/Lists/Announcements",
+            "displayName": "Announcements",
+            "createdBy": {
+                "user": {
+                    "email": "provisioninguser0@m365x214355.onmicrosoft.com",
+                    "displayName": "Provisioning User"
+                }
+            },
+            "parentReference": {},
+            "list": {
+                "contentTypesEnabled": false,
+                "hidden": false,
+                "template": "announcements"
+            }
+        },
+        {
+            "@odata.etag": "\"40e8ed60-3c58-4093-bbc1-edcd06e1528d,0\"",
+            "createdDateTime": "2017-07-31T16:29:15Z",
+            "description": "",
+            "eTag": "\"40e8ed60-3c58-4093-bbc1-edcd06e1528d,0\"",
+            "id": "40e8ed60-3c58-4093-bbc1-edcd06e1528d",
+            "lastModifiedDateTime": "2017-07-31T16:29:15Z",
+            "name": "Calendar",
+            "webUrl": "https://m365x214355.sharepoint.com/sites/contoso/Departments/SM/MarketingDocuments/Lists/Calendar",
+            "displayName": "Calendar",
+            "createdBy": {
+                "user": {
+                    "email": "provisioninguser0@m365x214355.onmicrosoft.com",
+                    "displayName": "Provisioning User"
+                }
+            },
+            "parentReference": {},
+            "list": {
+                "contentTypesEnabled": true,
+                "hidden": false,
+                "template": "events"
+            }
+        },
+        {
+            "@odata.etag": "\"1fa7b046-9b8f-45ef-bb43-f9d2f7ff3f11,60\"",
+            "createdDateTime": "2017-07-31T16:29:37Z",
+            "description": "Content repository for Marketing Documents digital assets",
+            "eTag": "\"1fa7b046-9b8f-45ef-bb43-f9d2f7ff3f11,60\"",
+            "id": "1fa7b046-9b8f-45ef-bb43-f9d2f7ff3f11",
+            "lastModifiedDateTime": "2017-07-31T16:32:07Z",
+            "name": "Digital Assets",
+            "webUrl": "https://m365x214355.sharepoint.com/sites/contoso/Departments/SM/MarketingDocuments/Digital%20Assets",
+            "displayName": "Digital Assets",
+            "createdBy": {
+                "user": {
+                    "email": "provisioninguser0@m365x214355.onmicrosoft.com",
+                    "displayName": "Provisioning User"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "displayName": "System Account"
+                }
+            },
+            "parentReference": {},
+            "list": {
+                "contentTypesEnabled": true,
+                "hidden": false,
+                "template": "851"
+            }
+        },
+        {
+            "@odata.etag": "\"71c37c1b-521b-4a02-ad97-be467b796f0b,14\"",
+            "createdDateTime": "2017-07-31T16:29:15Z",
+            "description": "",
+            "eTag": "\"71c37c1b-521b-4a02-ad97-be467b796f0b,14\"",
+            "id": "71c37c1b-521b-4a02-ad97-be467b796f0b",
+            "lastModifiedDateTime": "2017-08-06T02:51:50Z",
+            "name": "Shared Documents",
+            "webUrl": "https://m365x214355.sharepoint.com/sites/contoso/Departments/SM/MarketingDocuments/Shared%20Documents",
+            "displayName": "Documents",
+            "createdBy": {
+                "user": {
+                    "email": "provisioninguser0@m365x214355.onmicrosoft.com",
+                    "displayName": "Provisioning User"
+                }
+            },
+            "parentReference": {},
+            "list": {
+                "contentTypesEnabled": false,
+                "hidden": false,
+                "template": "documentLibrary"
+            }
+        },
+        {
+            "@odata.etag": "\"b87a01df-480e-455c-96c4-4e006c3b39c1,39\"",
+            "createdDateTime": "2017-08-06T02:48:41Z",
+            "description": "This system library was created by the Publishing feature to store images that are used on pages in this site.",
+            "eTag": "\"b87a01df-480e-455c-96c4-4e006c3b39c1,39\"",
+            "id": "b87a01df-480e-455c-96c4-4e006c3b39c1",
+            "lastModifiedDateTime": "2017-08-06T02:48:47Z",
+            "name": "PublishingImages",
+            "webUrl": "https://m365x214355.sharepoint.com/sites/contoso/Departments/SM/MarketingDocuments/PublishingImages",
+            "displayName": "Images",
+            "createdBy": {
+                "user": {
+                    "email": "provisioninguser2@m365x214355.onmicrosoft.com",
+                    "displayName": "Provisioning User"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "email": "provisioninguser2@m365x214355.onmicrosoft.com",
+                    "displayName": "Provisioning User"
+                }
+            },
+            "parentReference": {},
+            "list": {
+                "contentTypesEnabled": true,
+                "hidden": false,
+                "template": "851"
+            }
+        },
+        {
+            "@odata.etag": "\"88c39faa-9c00-4d2b-9709-4393a695167d,1\"",
+            "createdDateTime": "2017-08-06T02:51:59Z",
+            "description": "",
+            "eTag": "\"88c39faa-9c00-4d2b-9709-4393a695167d,1\"",
+            "id": "88c39faa-9c00-4d2b-9709-4393a695167d",
+            "lastModifiedDateTime": "2017-08-06T02:51:59Z",
+            "name": "Issues",
+            "webUrl": "https://m365x214355.sharepoint.com/sites/contoso/Departments/SM/MarketingDocuments/Lists/Issues",
+            "displayName": "Issues",
+            "createdBy": {
+                "user": {
+                    "email": "provisioninguser2@m365x214355.onmicrosoft.com",
+                    "displayName": "Provisioning User"
+                }
+            },
+            "parentReference": {},
+            "list": {
+                "contentTypesEnabled": true,
+                "hidden": false,
+                "template": "issueTracking"
+            }
+        },
+        {
+            "@odata.etag": "\"8b0a443d-1a98-4f5e-ad86-567dcd10011c,0\"",
+            "createdDateTime": "2017-07-31T16:29:15Z",
+            "description": "Use the Links list for links to Web pages that your team members will find interesting or useful.",
+            "eTag": "\"8b0a443d-1a98-4f5e-ad86-567dcd10011c,0\"",
+            "id": "8b0a443d-1a98-4f5e-ad86-567dcd10011c",
+            "lastModifiedDateTime": "2017-07-31T16:29:15Z",
+            "name": "Links",
+            "webUrl": "https://m365x214355.sharepoint.com/sites/contoso/Departments/SM/MarketingDocuments/Lists/Links",
+            "displayName": "Links",
+            "createdBy": {
+                "user": {
+                    "email": "provisioninguser0@m365x214355.onmicrosoft.com",
+                    "displayName": "Provisioning User"
+                }
+            },
+            "parentReference": {},
+            "list": {
+                "contentTypesEnabled": false,
+                "hidden": false,
+                "template": "links"
+            }
+        },
+        {
+            "@odata.etag": "\"43e1842b-1892-4562-91cb-e89fa1f045d4,1\"",
+            "createdDateTime": "2017-08-06T02:52:06Z",
+            "description": "",
+            "eTag": "\"43e1842b-1892-4562-91cb-e89fa1f045d4,1\"",
+            "id": "43e1842b-1892-4562-91cb-e89fa1f045d4",
+            "lastModifiedDateTime": "2017-08-06T02:52:06Z",
+            "name": "Marketing Forms",
+            "webUrl": "https://m365x214355.sharepoint.com/sites/contoso/Departments/SM/MarketingDocuments/Marketing%20Forms",
+            "displayName": "Marketing Forms",
+            "createdBy": {
+                "user": {
+                    "email": "provisioninguser2@m365x214355.onmicrosoft.com",
+                    "displayName": "Provisioning User"
+                }
+            },
+            "parentReference": {},
+            "list": {
+                "contentTypesEnabled": true,
+                "hidden": false,
+                "template": "xmlForm"
+            }
+        },
+        {
+            "@odata.etag": "\"5ea49053-d18f-48dd-ac87-d748155e6c2e,1\"",
+            "createdDateTime": "2017-08-06T02:52:09Z",
+            "description": "",
+            "eTag": "\"5ea49053-d18f-48dd-ac87-d748155e6c2e,1\"",
+            "id": "5ea49053-d18f-48dd-ac87-d748155e6c2e",
+            "lastModifiedDateTime": "2017-08-06T02:52:09Z",
+            "name": "Marketing Presentations",
+            "webUrl": "https://m365x214355.sharepoint.com/sites/contoso/Departments/SM/MarketingDocuments/Marketing%20Presentations",
+            "displayName": "Marketing Presentations",
+            "createdBy": {
+                "user": {
+                    "email": "provisioninguser2@m365x214355.onmicrosoft.com",
+                    "displayName": "Provisioning User"
+                }
+            },
+            "parentReference": {},
+            "list": {
+                "contentTypesEnabled": true,
+                "hidden": false,
+                "template": "2100"
+            }
+        },
+        {
+            "@odata.etag": "\"aa14af40-4afc-4c73-a21b-fa2cc623c29f,1\"",
+            "createdDateTime": "2017-08-06T02:52:13Z",
+            "description": "",
+            "eTag": "\"aa14af40-4afc-4c73-a21b-fa2cc623c29f,1\"",
+            "id": "aa14af40-4afc-4c73-a21b-fa2cc623c29f",
+            "lastModifiedDateTime": "2017-08-06T02:52:13Z",
+            "name": "Marketing Survey",
+            "webUrl": "https://m365x214355.sharepoint.com/sites/contoso/Departments/SM/MarketingDocuments/Lists/Marketing%20Survey",
+            "displayName": "Marketing Survey",
+            "createdBy": {
+                "user": {
+                    "email": "provisioninguser2@m365x214355.onmicrosoft.com",
+                    "displayName": "Provisioning User"
+                }
+            },
+            "parentReference": {},
+            "list": {
+                "contentTypesEnabled": false,
+                "hidden": false,
+                "template": "survey"
+            }
+        },
+        {
+            "@odata.etag": "\"3704ed3d-78cd-4611-b26b-23326904712b,13\"",
+            "createdDateTime": "2017-08-06T02:48:23Z",
+            "description": "MySite MicroFeed Persistent Storage List",
+            "eTag": "\"3704ed3d-78cd-4611-b26b-23326904712b,13\"",
+            "id": "3704ed3d-78cd-4611-b26b-23326904712b",
+            "lastModifiedDateTime": "2017-08-06T02:48:23Z",
+            "name": "PublishedFeed",
+            "webUrl": "https://m365x214355.sharepoint.com/sites/contoso/Departments/SM/MarketingDocuments/Lists/PublishedFeed",
+            "displayName": "MicroFeed",
+            "createdBy": {
+                "user": {
+                    "email": "provisioninguser2@m365x214355.onmicrosoft.com",
+                    "displayName": "Provisioning User"
+                }
+            },
+            "parentReference": {},
+            "list": {
+                "contentTypesEnabled": true,
+                "hidden": false,
+                "template": "544"
+            }
+        },
+        {
+            "@odata.etag": "\"1e0cd505-62ea-444e-98f7-a403622be1eb,89\"",
+            "createdDateTime": "2017-08-06T02:48:26Z",
+            "description": "This system library was created by the Publishing feature to store pages that are created in this site.",
+            "eTag": "\"1e0cd505-62ea-444e-98f7-a403622be1eb,89\"",
+            "id": "1e0cd505-62ea-444e-98f7-a403622be1eb",
+            "lastModifiedDateTime": "2017-08-06T02:48:26Z",
+            "name": "Pages",
+            "webUrl": "https://m365x214355.sharepoint.com/sites/contoso/Departments/SM/MarketingDocuments/Pages",
+            "displayName": "Pages",
+            "createdBy": {
+                "user": {
+                    "email": "provisioninguser2@m365x214355.onmicrosoft.com",
+                    "displayName": "Provisioning User"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "email": "provisioninguser2@m365x214355.onmicrosoft.com",
+                    "displayName": "Provisioning User"
+                }
+            },
+            "parentReference": {},
+            "list": {
+                "contentTypesEnabled": true,
+                "hidden": false,
+                "template": "850"
+            }
+        },
+        {
+            "@odata.etag": "\"2eabdaec-8a0c-4148-8b7d-6f5fb14c9449,1\"",
+            "createdDateTime": "2017-08-06T02:52:17Z",
+            "description": "",
+            "eTag": "\"2eabdaec-8a0c-4148-8b7d-6f5fb14c9449,1\"",
+            "id": "2eabdaec-8a0c-4148-8b7d-6f5fb14c9449",
+            "lastModifiedDateTime": "2017-08-06T02:52:37Z",
+            "name": "Tasks",
+            "webUrl": "https://m365x214355.sharepoint.com/sites/contoso/Departments/SM/MarketingDocuments/Lists/Tasks",
+            "displayName": "Tasks",
+            "createdBy": {
+                "user": {
+                    "email": "provisioninguser2@m365x214355.onmicrosoft.com",
+                    "displayName": "Provisioning User"
+                }
+            },
+            "parentReference": {},
+            "list": {
+                "contentTypesEnabled": true,
+                "hidden": false,
+                "template": "tasksWithTimelineAndHierarchy"
+            }
+        },
+        {
+            "@odata.etag": "\"c57fdd82-6b7b-44e0-b289-3bb57f73cc4f,0\"",
+            "createdDateTime": "2017-07-31T16:29:15Z",
+            "description": "",
+            "eTag": "\"c57fdd82-6b7b-44e0-b289-3bb57f73cc4f,0\"",
+            "id": "c57fdd82-6b7b-44e0-b289-3bb57f73cc4f",
+            "lastModifiedDateTime": "2017-07-31T16:29:15Z",
+            "name": "Team Discussion",
+            "webUrl": "https://m365x214355.sharepoint.com/sites/contoso/Departments/SM/MarketingDocuments/Lists/Team%20Discussion",
+            "displayName": "Team Discussion",
+            "createdBy": {
+                "user": {
+                    "email": "provisioninguser0@m365x214355.onmicrosoft.com",
+                    "displayName": "Provisioning User"
+                }
+            },
+            "parentReference": {},
+            "list": {
+                "contentTypesEnabled": true,
+                "hidden": false,
+                "template": "discussionBoard"
+            }
+        },
+        {
+            "@odata.etag": "\"b3d2023c-66de-45e6-b86e-42296c8090da,2\"",
+            "createdDateTime": "2017-08-06T02:48:26Z",
+            "description": "This system library was created by the Publishing feature to store workflow tasks that are created in this site.",
+            "eTag": "\"b3d2023c-66de-45e6-b86e-42296c8090da,2\"",
+            "id": "b3d2023c-66de-45e6-b86e-42296c8090da",
+            "lastModifiedDateTime": "2017-08-06T02:48:26Z",
+            "name": "WorkflowTasks",
+            "webUrl": "https://m365x214355.sharepoint.com/sites/contoso/Departments/SM/MarketingDocuments/WorkflowTasks",
+            "displayName": "Workflow Tasks",
+            "createdBy": {
+                "user": {
+                    "email": "provisioninguser2@m365x214355.onmicrosoft.com",
+                    "displayName": "Provisioning User"
+                }
+            },
+            "parentReference": {},
+            "list": {
+                "contentTypesEnabled": true,
+                "hidden": false,
+                "template": "tasks"
+            }
+        }
+    ]
+}

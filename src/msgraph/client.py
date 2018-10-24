@@ -8,10 +8,11 @@ from msgraph.constants import GRAPH_URL, GRAPH_VERSION, LOGIN_URL, LOGIN_VERSION
 
 class Client(object):
 
-    def __init__(self, appId, tenant, secret):
+    def __init__(self, appId, tenant, secret, token=None):
         self.appId = appId
         self.tenant = tenant
         self.secret = secret
+        self.token = token
 
     def getEndpoint(self, path, **kwargs):
         endpoint = GRAPH_ENDPOINTS.get(path)
@@ -25,8 +26,13 @@ class Client(object):
                 endpoint = endpoint.format(tenant=self.tenant, version=LOGIN_VERSION, **kwargs)
         return endpoint
 
-    def getResponse(self, path, data):
-        pass
+    def getResponse(self, endpoint, **kwargs):
+        if datetime.now() > self.token.expire_date:
+            self.token = getToken()
+        headers = {'Authorization': self.token.token_type + ' ' + self.token.access_token}
+
+        return requests.get(self.getEndpoint(endpoint, **kwargs),
+                            headers=headers)
 
     def getToken(self, grant_type='client_credentials', scope='https://graph.microsoft.com/.default'):
         data = {'client_id': self.appId,

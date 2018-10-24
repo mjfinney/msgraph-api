@@ -1,0 +1,58 @@
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#sites('m365x214355.sharepoint.com%2Cf66f0635-cbc1-4695-8c25-d76c20b5f883%2C73429943-801a-48bd-9ab9-b57b0b4e4f27')/lists('71c37c1b-521b-4a02-ad97-be467b796f0b')/items/$entity",
+    "@odata.etag": "\"eb6f8cd9-6684-4764-9c2f-e8816ae6e451,4\"",
+    "createdDateTime": "2017-08-06T02:49:56Z",
+    "eTag": "\"eb6f8cd9-6684-4764-9c2f-e8816ae6e451,4\"",
+    "id": "1",
+    "lastModifiedDateTime": "2017-08-06T02:50:04Z",
+    "webUrl": "https://m365x214355.sharepoint.com/sites/contoso/Departments/SM/MarketingDocuments/Shared%20Documents/Contoso%20Q3%20Marketing%20Campaign%20Report.docx",
+    "createdBy": {
+        "user": {
+            "email": "LidiaH@M365x214355.onmicrosoft.com",
+            "id": "2ed03dfd-01d8-4005-a9ef-fa8ee546dc6c",
+            "displayName": "Lidia Holloway"
+        }
+    },
+    "lastModifiedBy": {
+        "user": {
+            "email": "LidiaH@M365x214355.onmicrosoft.com",
+            "id": "2ed03dfd-01d8-4005-a9ef-fa8ee546dc6c",
+            "displayName": "Lidia Holloway"
+        }
+    },
+    "parentReference": {
+        "id": "44bb219a-6d15-4ae7-969d-e3873e3de2fd"
+    },
+    "contentType": {
+        "id": "0x0101009F78261715C2E446A43B7EC1A484FABF"
+    },
+    "fields@odata.context": "https://graph.microsoft.com/v1.0/$metadata#sites('m365x214355.sharepoint.com%2Cf66f0635-cbc1-4695-8c25-d76c20b5f883%2C73429943-801a-48bd-9ab9-b57b0b4e4f27')/lists('71c37c1b-521b-4a02-ad97-be467b796f0b')/items('1')/fields/$entity",
+    "fields": {
+        "@odata.etag": "\"eb6f8cd9-6684-4764-9c2f-e8816ae6e451,4\"",
+        "FileLeafRef": "Contoso Q3 Marketing Campaign Report.docx",
+        "Title": "Contoso Q3 Marketing Campaign Report",
+        "id": "1",
+        "ContentType": "Document",
+        "Created": "2017-08-06T02:49:56Z",
+        "AuthorLookupId": "43",
+        "Modified": "2017-08-06T02:50:04Z",
+        "EditorLookupId": "43",
+        "_CheckinComment": "",
+        "LinkFilenameNoMenu": "Contoso Q3 Marketing Campaign Report.docx",
+        "LinkFilename": "Contoso Q3 Marketing Campaign Report.docx",
+        "DocIcon": "docx",
+        "FileSizeDisplay": "928713",
+        "ItemChildCount": "0",
+        "FolderChildCount": "0",
+        "_ComplianceFlags": "",
+        "_ComplianceTag": "",
+        "_ComplianceTagWrittenTime": "",
+        "_ComplianceTagUserId": "",
+        "_CommentCount": "",
+        "_LikeCount": "",
+        "Edit": "0",
+        "_UIVersionString": "4.0",
+        "ParentVersionStringLookupId": "1",
+        "ParentLeafNameLookupId": "1"
+    }
+}

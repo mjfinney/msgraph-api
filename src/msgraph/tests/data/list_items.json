@@ -1,0 +1,518 @@
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#sites('m365x214355.sharepoint.com%2Cf66f0635-cbc1-4695-8c25-d76c20b5f883%2C73429943-801a-48bd-9ab9-b57b0b4e4f27')/lists('71c37c1b-521b-4a02-ad97-be467b796f0b')/items",
+    "value": [
+        {
+            "@odata.etag": "\"eb6f8cd9-6684-4764-9c2f-e8816ae6e451,4\"",
+            "createdDateTime": "2017-08-06T02:49:56Z",
+            "eTag": "\"eb6f8cd9-6684-4764-9c2f-e8816ae6e451,4\"",
+            "id": "1",
+            "lastModifiedDateTime": "2017-08-06T02:50:04Z",
+            "webUrl": "https://m365x214355.sharepoint.com/sites/contoso/Departments/SM/MarketingDocuments/Shared%20Documents/Contoso%20Q3%20Marketing%20Campaign%20Report.docx",
+            "createdBy": {
+                "user": {
+                    "email": "LidiaH@M365x214355.onmicrosoft.com",
+                    "id": "2ed03dfd-01d8-4005-a9ef-fa8ee546dc6c",
+                    "displayName": "Lidia Holloway"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "email": "LidiaH@M365x214355.onmicrosoft.com",
+                    "id": "2ed03dfd-01d8-4005-a9ef-fa8ee546dc6c",
+                    "displayName": "Lidia Holloway"
+                }
+            },
+            "parentReference": {
+                "id": "44bb219a-6d15-4ae7-969d-e3873e3de2fd"
+            },
+            "contentType": {
+                "id": "0x0101009F78261715C2E446A43B7EC1A484FABF"
+            },
+            "fields@odata.context": "https://graph.microsoft.com/v1.0/$metadata#sites('m365x214355.sharepoint.com%2Cf66f0635-cbc1-4695-8c25-d76c20b5f883%2C73429943-801a-48bd-9ab9-b57b0b4e4f27')/lists('71c37c1b-521b-4a02-ad97-be467b796f0b')/items('1')/fields/$entity",
+            "fields": {
+                "@odata.etag": "\"eb6f8cd9-6684-4764-9c2f-e8816ae6e451,4\"",
+                "FileLeafRef": "Contoso Q3 Marketing Campaign Report.docx",
+                "Title": "Contoso Q3 Marketing Campaign Report",
+                "id": "1",
+                "ContentType": "Document",
+                "Created": "2017-08-06T02:49:56Z",
+                "AuthorLookupId": "43",
+                "Modified": "2017-08-06T02:50:04Z",
+                "EditorLookupId": "43",
+                "_CheckinComment": "",
+                "LinkFilenameNoMenu": "Contoso Q3 Marketing Campaign Report.docx",
+                "LinkFilename": "Contoso Q3 Marketing Campaign Report.docx",
+                "DocIcon": "docx",
+                "FileSizeDisplay": "928713",
+                "ItemChildCount": "0",
+                "FolderChildCount": "0",
+                "_ComplianceFlags": "",
+                "_ComplianceTag": "",
+                "_ComplianceTagWrittenTime": "",
+                "_ComplianceTagUserId": "",
+                "_CommentCount": "",
+                "_LikeCount": "",
+                "Edit": "0",
+                "_UIVersionString": "4.0",
+                "ParentVersionStringLookupId": "1",
+                "ParentLeafNameLookupId": "1"
+            }
+        },
+        {
+            "@odata.etag": "\"36560a9d-19cc-41cc-9a2f-9509ae0baace,4\"",
+            "createdDateTime": "2017-08-06T02:50:09Z",
+            "eTag": "\"36560a9d-19cc-41cc-9a2f-9509ae0baace,4\"",
+            "id": "2",
+            "lastModifiedDateTime": "2017-08-06T02:50:16Z",
+            "webUrl": "https://m365x214355.sharepoint.com/sites/contoso/Departments/SM/MarketingDocuments/Shared%20Documents/International%20Marketing%20Strategies.docx",
+            "createdBy": {
+                "user": {
+                    "email": "IsaiahL@M365x214355.onmicrosoft.com",
+                    "id": "e3d0513b-449e-4198-ba6f-bd97ae7cae85",
+                    "displayName": "Isaiah Langer"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "email": "IsaiahL@M365x214355.onmicrosoft.com",
+                    "id": "e3d0513b-449e-4198-ba6f-bd97ae7cae85",
+                    "displayName": "Isaiah Langer"
+                }
+            },
+            "parentReference": {
+                "id": "44bb219a-6d15-4ae7-969d-e3873e3de2fd"
+            },
+            "contentType": {
+                "id": "0x0101009F78261715C2E446A43B7EC1A484FABF"
+            },
+            "fields@odata.context": "https://graph.microsoft.com/v1.0/$metadata#sites('m365x214355.sharepoint.com%2Cf66f0635-cbc1-4695-8c25-d76c20b5f883%2C73429943-801a-48bd-9ab9-b57b0b4e4f27')/lists('71c37c1b-521b-4a02-ad97-be467b796f0b')/items('2')/fields/$entity",
+            "fields": {
+                "@odata.etag": "\"36560a9d-19cc-41cc-9a2f-9509ae0baace,4\"",
+                "FileLeafRef": "International Marketing Strategies.docx",
+                "Title": "International Marketing Strategies",
+                "id": "2",
+                "ContentType": "Document",
+                "Created": "2017-08-06T02:50:09Z",
+                "AuthorLookupId": "33",
+                "Modified": "2017-08-06T02:50:16Z",
+                "EditorLookupId": "33",
+                "_CheckinComment": "",
+                "LinkFilenameNoMenu": "International Marketing Strategies.docx",
+                "LinkFilename": "International Marketing Strategies.docx",
+                "DocIcon": "docx",
+                "FileSizeDisplay": "944666",
+                "ItemChildCount": "0",
+                "FolderChildCount": "0",
+                "_ComplianceFlags": "",
+                "_ComplianceTag": "",
+                "_ComplianceTagWrittenTime": "",
+                "_ComplianceTagUserId": "",
+                "_CommentCount": "",
+                "_LikeCount": "",
+                "Edit": "0",
+                "_UIVersionString": "4.0",
+                "ParentVersionStringLookupId": "2",
+                "ParentLeafNameLookupId": "2"
+            }
+        },
+        {
+            "@odata.etag": "\"35cc3f45-3bbc-4963-b002-dc0a18940bd5,4\"",
+            "createdDateTime": "2017-08-06T02:50:39Z",
+            "eTag": "\"35cc3f45-3bbc-4963-b002-dc0a18940bd5,4\"",
+            "id": "3",
+            "lastModifiedDateTime": "2017-08-06T02:50:46Z",
+            "webUrl": "https://m365x214355.sharepoint.com/sites/contoso/Departments/SM/MarketingDocuments/Shared%20Documents/New%20Supplier.docx",
+            "createdBy": {
+                "user": {
+                    "email": "LidiaH@M365x214355.onmicrosoft.com",
+                    "id": "2ed03dfd-01d8-4005-a9ef-fa8ee546dc6c",
+                    "displayName": "Lidia Holloway"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "email": "LidiaH@M365x214355.onmicrosoft.com",
+                    "id": "2ed03dfd-01d8-4005-a9ef-fa8ee546dc6c",
+                    "displayName": "Lidia Holloway"
+                }
+            },
+            "parentReference": {
+                "id": "44bb219a-6d15-4ae7-969d-e3873e3de2fd"
+            },
+            "contentType": {
+                "id": "0x0101009F78261715C2E446A43B7EC1A484FABF"
+            },
+            "fields@odata.context": "https://graph.microsoft.com/v1.0/$metadata#sites('m365x214355.sharepoint.com%2Cf66f0635-cbc1-4695-8c25-d76c20b5f883%2C73429943-801a-48bd-9ab9-b57b0b4e4f27')/lists('71c37c1b-521b-4a02-ad97-be467b796f0b')/items('3')/fields/$entity",
+            "fields": {
+                "@odata.etag": "\"35cc3f45-3bbc-4963-b002-dc0a18940bd5,4\"",
+                "FileLeafRef": "New Supplier.docx",
+                "Title": "New Supplier",
+                "id": "3",
+                "ContentType": "Document",
+                "Created": "2017-08-06T02:50:39Z",
+                "AuthorLookupId": "43",
+                "Modified": "2017-08-06T02:50:46Z",
+                "EditorLookupId": "43",
+                "_CheckinComment": "",
+                "LinkFilenameNoMenu": "New Supplier.docx",
+                "LinkFilename": "New Supplier.docx",
+                "DocIcon": "docx",
+                "FileSizeDisplay": "900439",
+                "ItemChildCount": "0",
+                "FolderChildCount": "0",
+                "_ComplianceFlags": "",
+                "_ComplianceTag": "",
+                "_ComplianceTagWrittenTime": "",
+                "_ComplianceTagUserId": "",
+                "_CommentCount": "",
+                "_LikeCount": "",
+                "Edit": "0",
+                "_UIVersionString": "4.0",
+                "ParentVersionStringLookupId": "3",
+                "ParentLeafNameLookupId": "3"
+            }
+        },
+        {
+            "@odata.etag": "\"5d87cfe0-ec00-44ab-bed9-4b42a8c9df9b,4\"",
+            "createdDateTime": "2017-08-06T02:50:51Z",
+            "eTag": "\"5d87cfe0-ec00-44ab-bed9-4b42a8c9df9b,4\"",
+            "id": "4",
+            "lastModifiedDateTime": "2017-08-06T02:50:58Z",
+            "webUrl": "https://m365x214355.sharepoint.com/sites/contoso/Departments/SM/MarketingDocuments/Shared%20Documents/Office%20Vision%20Roadmap%20v1.1%20no%20embedded%20fonts.pptx",
+            "createdBy": {
+                "user": {
+                    "email": "IsaiahL@M365x214355.onmicrosoft.com",
+                    "id": "e3d0513b-449e-4198-ba6f-bd97ae7cae85",
+                    "displayName": "Isaiah Langer"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "email": "IsaiahL@M365x214355.onmicrosoft.com",
+                    "id": "e3d0513b-449e-4198-ba6f-bd97ae7cae85",
+                    "displayName": "Isaiah Langer"
+                }
+            },
+            "parentReference": {
+                "id": "44bb219a-6d15-4ae7-969d-e3873e3de2fd"
+            },
+            "contentType": {
+                "id": "0x0101009F78261715C2E446A43B7EC1A484FABF"
+            },
+            "fields@odata.context": "https://graph.microsoft.com/v1.0/$metadata#sites('m365x214355.sharepoint.com%2Cf66f0635-cbc1-4695-8c25-d76c20b5f883%2C73429943-801a-48bd-9ab9-b57b0b4e4f27')/lists('71c37c1b-521b-4a02-ad97-be467b796f0b')/items('4')/fields/$entity",
+            "fields": {
+                "@odata.etag": "\"5d87cfe0-ec00-44ab-bed9-4b42a8c9df9b,4\"",
+                "FileLeafRef": "Office Vision Roadmap v1.1 no embedded fonts.pptx",
+                "Title": "Office Vision Roadmap v1.1 no embedded fonts",
+                "id": "4",
+                "ContentType": "Document",
+                "Created": "2017-08-06T02:50:51Z",
+                "AuthorLookupId": "33",
+                "Modified": "2017-08-06T02:50:58Z",
+                "EditorLookupId": "33",
+                "_CheckinComment": "",
+                "LinkFilenameNoMenu": "Office Vision Roadmap v1.1 no embedded fonts.pptx",
+                "LinkFilename": "Office Vision Roadmap v1.1 no embedded fonts.pptx",
+                "DocIcon": "pptx",
+                "FileSizeDisplay": "768109",
+                "ItemChildCount": "0",
+                "FolderChildCount": "0",
+                "_ComplianceFlags": "",
+                "_ComplianceTag": "",
+                "_ComplianceTagWrittenTime": "",
+                "_ComplianceTagUserId": "",
+                "_CommentCount": "",
+                "_LikeCount": "",
+                "Edit": "0",
+                "_UIVersionString": "4.0",
+                "ParentVersionStringLookupId": "4",
+                "ParentLeafNameLookupId": "4"
+            }
+        },
+        {
+            "@odata.etag": "\"46880586-abda-4f6d-96d2-f8b9d421766a,4\"",
+            "createdDateTime": "2017-08-06T02:51:03Z",
+            "eTag": "\"46880586-abda-4f6d-96d2-f8b9d421766a,4\"",
+            "id": "5",
+            "lastModifiedDateTime": "2017-08-06T02:51:11Z",
+            "webUrl": "https://m365x214355.sharepoint.com/sites/contoso/Departments/SM/MarketingDocuments/Shared%20Documents/Product%20launch%20brief.docx",
+            "createdBy": {
+                "user": {
+                    "email": "LidiaH@M365x214355.onmicrosoft.com",
+                    "id": "2ed03dfd-01d8-4005-a9ef-fa8ee546dc6c",
+                    "displayName": "Lidia Holloway"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "email": "LidiaH@M365x214355.onmicrosoft.com",
+                    "id": "2ed03dfd-01d8-4005-a9ef-fa8ee546dc6c",
+                    "displayName": "Lidia Holloway"
+                }
+            },
+            "parentReference": {
+                "id": "44bb219a-6d15-4ae7-969d-e3873e3de2fd"
+            },
+            "contentType": {
+                "id": "0x0101009F78261715C2E446A43B7EC1A484FABF"
+            },
+            "fields@odata.context": "https://graph.microsoft.com/v1.0/$metadata#sites('m365x214355.sharepoint.com%2Cf66f0635-cbc1-4695-8c25-d76c20b5f883%2C73429943-801a-48bd-9ab9-b57b0b4e4f27')/lists('71c37c1b-521b-4a02-ad97-be467b796f0b')/items('5')/fields/$entity",
+            "fields": {
+                "@odata.etag": "\"46880586-abda-4f6d-96d2-f8b9d421766a,4\"",
+                "FileLeafRef": "Product launch brief.docx",
+                "Title": "Product launch brief",
+                "id": "5",
+                "ContentType": "Document",
+                "Created": "2017-08-06T02:51:03Z",
+                "AuthorLookupId": "43",
+                "Modified": "2017-08-06T02:51:11Z",
+                "EditorLookupId": "43",
+                "_CheckinComment": "",
+                "LinkFilenameNoMenu": "Product launch brief.docx",
+                "LinkFilename": "Product launch brief.docx",
+                "DocIcon": "docx",
+                "FileSizeDisplay": "962183",
+                "ItemChildCount": "0",
+                "FolderChildCount": "0",
+                "_ComplianceFlags": "",
+                "_ComplianceTag": "",
+                "_ComplianceTagWrittenTime": "",
+                "_ComplianceTagUserId": "",
+                "_CommentCount": "",
+                "_LikeCount": "",
+                "Edit": "0",
+                "_UIVersionString": "4.0",
+                "ParentVersionStringLookupId": "5",
+                "ParentLeafNameLookupId": "5"
+            }
+        },
+        {
+            "@odata.etag": "\"7590da0b-2409-423a-b832-8656ea1c65da,4\"",
+            "createdDateTime": "2017-08-06T02:51:15Z",
+            "eTag": "\"7590da0b-2409-423a-b832-8656ea1c65da,4\"",
+            "id": "6",
+            "lastModifiedDateTime": "2017-08-06T02:51:21Z",
+            "webUrl": "https://m365x214355.sharepoint.com/sites/contoso/Departments/SM/MarketingDocuments/Shared%20Documents/Q2%20Marketing%20Analysis.xlsx",
+            "createdBy": {
+                "user": {
+                    "email": "MiriamG@M365x214355.onmicrosoft.com",
+                    "id": "08fa38e4-cbfa-4488-94ed-c834da6539df",
+                    "displayName": "Miriam Graham"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "email": "MiriamG@M365x214355.onmicrosoft.com",
+                    "id": "08fa38e4-cbfa-4488-94ed-c834da6539df",
+                    "displayName": "Miriam Graham"
+                }
+            },
+            "parentReference": {
+                "id": "44bb219a-6d15-4ae7-969d-e3873e3de2fd"
+            },
+            "contentType": {
+                "id": "0x0101009F78261715C2E446A43B7EC1A484FABF"
+            },
+            "fields@odata.context": "https://graph.microsoft.com/v1.0/$metadata#sites('m365x214355.sharepoint.com%2Cf66f0635-cbc1-4695-8c25-d76c20b5f883%2C73429943-801a-48bd-9ab9-b57b0b4e4f27')/lists('71c37c1b-521b-4a02-ad97-be467b796f0b')/items('6')/fields/$entity",
+            "fields": {
+                "@odata.etag": "\"7590da0b-2409-423a-b832-8656ea1c65da,4\"",
+                "FileLeafRef": "Q2 Marketing Analysis.xlsx",
+                "Title": "Q2 Marketing Analysis",
+                "id": "6",
+                "ContentType": "Document",
+                "Created": "2017-08-06T02:51:15Z",
+                "AuthorLookupId": "45",
+                "Modified": "2017-08-06T02:51:21Z",
+                "EditorLookupId": "45",
+                "_CheckinComment": "",
+                "LinkFilenameNoMenu": "Q2 Marketing Analysis.xlsx",
+                "LinkFilename": "Q2 Marketing Analysis.xlsx",
+                "DocIcon": "xlsx",
+                "FileSizeDisplay": "87920",
+                "ItemChildCount": "0",
+                "FolderChildCount": "0",
+                "_ComplianceFlags": "",
+                "_ComplianceTag": "",
+                "_ComplianceTagWrittenTime": "",
+                "_ComplianceTagUserId": "",
+                "_CommentCount": "",
+                "_LikeCount": "",
+                "Edit": "0",
+                "_UIVersionString": "4.0",
+                "ParentVersionStringLookupId": "6",
+                "ParentLeafNameLookupId": "6"
+            }
+        },
+        {
+            "@odata.etag": "\"04f5c8b9-7bbd-4a21-a42f-f2619d5c6c04,4\"",
+            "createdDateTime": "2017-08-06T02:51:26Z",
+            "eTag": "\"04f5c8b9-7bbd-4a21-a42f-f2619d5c6c04,4\"",
+            "id": "7",
+            "lastModifiedDateTime": "2017-08-06T02:51:33Z",
+            "webUrl": "https://m365x214355.sharepoint.com/sites/contoso/Departments/SM/MarketingDocuments/Shared%20Documents/Contoso%20Annual%20Marketing%20Campaign%20Report.docx",
+            "createdBy": {
+                "user": {
+                    "email": "LidiaH@M365x214355.onmicrosoft.com",
+                    "id": "2ed03dfd-01d8-4005-a9ef-fa8ee546dc6c",
+                    "displayName": "Lidia Holloway"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "email": "LynneR@M365x214355.onmicrosoft.com",
+                    "id": "e8a02cc7-df4d-4778-956d-784cc9506e5a",
+                    "displayName": "Lynne Robbins"
+                }
+            },
+            "parentReference": {
+                "id": "44bb219a-6d15-4ae7-969d-e3873e3de2fd"
+            },
+            "contentType": {
+                "id": "0x0101009F78261715C2E446A43B7EC1A484FABF"
+            },
+            "fields@odata.context": "https://graph.microsoft.com/v1.0/$metadata#sites('m365x214355.sharepoint.com%2Cf66f0635-cbc1-4695-8c25-d76c20b5f883%2C73429943-801a-48bd-9ab9-b57b0b4e4f27')/lists('71c37c1b-521b-4a02-ad97-be467b796f0b')/items('7')/fields/$entity",
+            "fields": {
+                "@odata.etag": "\"04f5c8b9-7bbd-4a21-a42f-f2619d5c6c04,4\"",
+                "FileLeafRef": "Contoso Annual Marketing Campaign Report.docx",
+                "Title": "Contoso Marketing Campaign Report",
+                "id": "7",
+                "ContentType": "Document",
+                "Created": "2017-08-06T02:51:26Z",
+                "AuthorLookupId": "43",
+                "Modified": "2017-08-06T02:51:33Z",
+                "EditorLookupId": "40",
+                "_CheckinComment": "",
+                "LinkFilenameNoMenu": "Contoso Annual Marketing Campaign Report.docx",
+                "LinkFilename": "Contoso Annual Marketing Campaign Report.docx",
+                "DocIcon": "docx",
+                "FileSizeDisplay": "235210",
+                "ItemChildCount": "0",
+                "FolderChildCount": "0",
+                "_ComplianceFlags": "",
+                "_ComplianceTag": "",
+                "_ComplianceTagWrittenTime": "",
+                "_ComplianceTagUserId": "",
+                "_CommentCount": "",
+                "_LikeCount": "",
+                "Edit": "0",
+                "_UIVersionString": "4.0",
+                "ParentVersionStringLookupId": "7",
+                "ParentLeafNameLookupId": "7"
+            }
+        },
+        {
+            "@odata.etag": "\"f1a5af7e-ee2e-4536-9bbc-725d03df687f,4\"",
+            "createdDateTime": "2017-08-06T02:51:38Z",
+            "eTag": "\"f1a5af7e-ee2e-4536-9bbc-725d03df687f,4\"",
+            "id": "8",
+            "lastModifiedDateTime": "2017-08-06T02:51:45Z",
+            "webUrl": "https://m365x214355.sharepoint.com/sites/contoso/Departments/SM/MarketingDocuments/Shared%20Documents/Contoso%20Q1%20Marketing%20Campaign%20Report.docx",
+            "createdBy": {
+                "user": {
+                    "email": "LidiaH@M365x214355.onmicrosoft.com",
+                    "id": "2ed03dfd-01d8-4005-a9ef-fa8ee546dc6c",
+                    "displayName": "Lidia Holloway"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "email": "LynneR@M365x214355.onmicrosoft.com",
+                    "id": "e8a02cc7-df4d-4778-956d-784cc9506e5a",
+                    "displayName": "Lynne Robbins"
+                }
+            },
+            "parentReference": {
+                "id": "44bb219a-6d15-4ae7-969d-e3873e3de2fd"
+            },
+            "contentType": {
+                "id": "0x0101009F78261715C2E446A43B7EC1A484FABF"
+            },
+            "fields@odata.context": "https://graph.microsoft.com/v1.0/$metadata#sites('m365x214355.sharepoint.com%2Cf66f0635-cbc1-4695-8c25-d76c20b5f883%2C73429943-801a-48bd-9ab9-b57b0b4e4f27')/lists('71c37c1b-521b-4a02-ad97-be467b796f0b')/items('8')/fields/$entity",
+            "fields": {
+                "@odata.etag": "\"f1a5af7e-ee2e-4536-9bbc-725d03df687f,4\"",
+                "FileLeafRef": "Contoso Q1 Marketing Campaign Report.docx",
+                "Title": "Contoso Q1 Marketing Campaign Report",
+                "id": "8",
+                "ContentType": "Document",
+                "Created": "2017-08-06T02:51:38Z",
+                "AuthorLookupId": "43",
+                "Modified": "2017-08-06T02:51:45Z",
+                "EditorLookupId": "40",
+                "_CheckinComment": "",
+                "LinkFilenameNoMenu": "Contoso Q1 Marketing Campaign Report.docx",
+                "LinkFilename": "Contoso Q1 Marketing Campaign Report.docx",
+                "DocIcon": "docx",
+                "FileSizeDisplay": "993689",
+                "ItemChildCount": "0",
+                "FolderChildCount": "0",
+                "_ComplianceFlags": "",
+                "_ComplianceTag": "",
+                "_ComplianceTagWrittenTime": "",
+                "_ComplianceTagUserId": "",
+                "_CommentCount": "",
+                "_LikeCount": "",
+                "Edit": "0",
+                "_UIVersionString": "4.0",
+                "ParentVersionStringLookupId": "8",
+                "ParentLeafNameLookupId": "8"
+            }
+        },
+        {
+            "@odata.etag": "\"d0f093fb-e947-4bc7-a9bc-542f0bde6510,4\"",
+            "createdDateTime": "2017-08-06T02:51:50Z",
+            "eTag": "\"d0f093fb-e947-4bc7-a9bc-542f0bde6510,4\"",
+            "id": "9",
+            "lastModifiedDateTime": "2017-08-06T02:51:56Z",
+            "webUrl": "https://m365x214355.sharepoint.com/sites/contoso/Departments/SM/MarketingDocuments/Shared%20Documents/Contoso%20Q2%20Marketing%20Campaign%20Report.docx",
+            "createdBy": {
+                "user": {
+                    "email": "IsaiahL@M365x214355.onmicrosoft.com",
+                    "id": "e3d0513b-449e-4198-ba6f-bd97ae7cae85",
+                    "displayName": "Isaiah Langer"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "email": "IsaiahL@M365x214355.onmicrosoft.com",
+                    "id": "e3d0513b-449e-4198-ba6f-bd97ae7cae85",
+                    "displayName": "Isaiah Langer"
+                }
+            },
+            "parentReference": {
+                "id": "44bb219a-6d15-4ae7-969d-e3873e3de2fd"
+            },
+            "contentType": {
+                "id": "0x0101009F78261715C2E446A43B7EC1A484FABF"
+            },
+            "fields@odata.context": "https://graph.microsoft.com/v1.0/$metadata#sites('m365x214355.sharepoint.com%2Cf66f0635-cbc1-4695-8c25-d76c20b5f883%2C73429943-801a-48bd-9ab9-b57b0b4e4f27')/lists('71c37c1b-521b-4a02-ad97-be467b796f0b')/items('9')/fields/$entity",
+            "fields": {
+                "@odata.etag": "\"d0f093fb-e947-4bc7-a9bc-542f0bde6510,4\"",
+                "FileLeafRef": "Contoso Q2 Marketing Campaign Report.docx",
+                "Title": "Contoso Q2 Marketing Campaign Report",
+                "id": "9",
+                "ContentType": "Document",
+                "Created": "2017-08-06T02:51:50Z",
+                "AuthorLookupId": "33",
+                "Modified": "2017-08-06T02:51:56Z",
+                "EditorLookupId": "33",
+                "_CheckinComment": "",
+                "LinkFilenameNoMenu": "Contoso Q2 Marketing Campaign Report.docx",
+                "LinkFilename": "Contoso Q2 Marketing Campaign Report.docx",
+                "DocIcon": "docx",
+                "FileSizeDisplay": "964314",
+                "ItemChildCount": "0",
+                "FolderChildCount": "0",
+                "_ComplianceFlags": "",
+                "_ComplianceTag": "",
+                "_ComplianceTagWrittenTime": "",
+                "_ComplianceTagUserId": "",
+                "_CommentCount": "",
+                "_LikeCount": "",
+                "Edit": "0",
+                "_UIVersionString": "4.0",
+                "ParentVersionStringLookupId": "9",
+                "ParentLeafNameLookupId": "9"
+            }
+        }
+    ]
+}

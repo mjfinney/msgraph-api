@@ -1,0 +1,24 @@
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#sites('m365x214355.sharepoint.com%2Cf66f0635-cbc1-4695-8c25-d76c20b5f883%2C73429943-801a-48bd-9ab9-b57b0b4e4f27')/lists/$entity",
+    "@odata.etag": "\"71c37c1b-521b-4a02-ad97-be467b796f0b,14\"",
+    "createdDateTime": "2017-07-31T16:29:15Z",
+    "description": "",
+    "eTag": "\"71c37c1b-521b-4a02-ad97-be467b796f0b,14\"",
+    "id": "71c37c1b-521b-4a02-ad97-be467b796f0b",
+    "lastModifiedDateTime": "2017-08-06T02:51:50Z",
+    "name": "Shared Documents",
+    "webUrl": "https://m365x214355.sharepoint.com/sites/contoso/Departments/SM/MarketingDocuments/Shared%20Documents",
+    "displayName": "Documents",
+    "createdBy": {
+        "user": {
+            "email": "provisioninguser0@m365x214355.onmicrosoft.com",
+            "displayName": "Provisioning User"
+        }
+    },
+    "parentReference": {},
+    "list": {
+        "contentTypesEnabled": false,
+        "hidden": false,
+        "template": "documentLibrary"
+    }
+}
