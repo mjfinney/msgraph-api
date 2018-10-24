@@ -27,8 +27,8 @@ class Client(object):
         return endpoint
 
     def getResponse(self, endpoint, **kwargs):
-        if datetime.now() > self.token.expire_date:
-            self.token = getToken()
+        if (self.token == None) or (datetime.now() > self.token.expire_date):
+            self.token = self.getToken()
         headers = {'Authorization': self.token.token_type + ' ' + self.token.access_token}
 
         return requests.get(self.getEndpoint(endpoint, **kwargs),
