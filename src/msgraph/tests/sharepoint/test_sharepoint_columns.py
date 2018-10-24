@@ -3,7 +3,7 @@ import json
 import requests_mock
 
 from msgraph.client import Client
-from msgraph.sharepoint import Sharepoint
+from msgraph.sharepoint import Sharepoint, SharepointTextColumn
 
 class TestSharepointColumns(object):
     def test_getLists(self, sharepoint, site_data):
@@ -57,6 +57,41 @@ class TestSharepointColumns(object):
     
         assert l.displayName == "Documents"
 
+    def test_getColumns(self, sharepoint, site_data):
+        responseData = site_data[0]
+        responseJson = site_data[1]
+        listId = '71c37c1b-521b-4a02-ad97-be467b796f0b'
+        siteId = responseData['id']
+
+        with open('./src/msgraph/tests/data/list_columns.json') as f:
+            text = f.read()
+            response_columns = json.loads(text)['value']
+
+        with open('./src/msgraph/tests/data/single_list.json') as f:
+            text_list = f.read()
+            response_list = json.loads(text)
+
+        with requests_mock.Mocker() as m:
+            m.get(sharepoint.client.getEndpoint('site_by_id',
+                                                siteId=siteId),
+                  text=responseJson)
+            m.get(sharepoint.client.getEndpoint('list_by_id',
+                                                siteId=siteId,
+                                                listId=listId),
+                  text=text_list)
+            m.get(sharepoint.client.getEndpoint('list_columns',
+                                                siteId=siteId,
+                                                listId=listId),
+                  text=text)
+
+            site = sharepoint.getSiteById(siteId)
+            l = site.getListById(listId)
+            columns = l.getColumns()
+    
+        assert columns[0].readOnly == response_columns[0]['readOnly']
+        assert isinstance(columns[2], SharepointTextColumn)
+        assert columns[2].type_properties.get('maxLength') == response_columns[2]['text']['maxLength']
+
     def test_getItems(self, sharepoint, site_data):
         responseData = site_data[0]
         responseJson = site_data[1]
@@ -88,7 +123,6 @@ class TestSharepointColumns(object):
             l = site.getListById(listId)
             items = l.getItems()
     
-        print items
         assert items[0].fields['Title'] == response_items[0]['fields']['Title']
 
 #def test_createListItem():

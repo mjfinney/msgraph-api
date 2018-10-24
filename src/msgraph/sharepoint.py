@@ -87,7 +87,16 @@ class SharepointList(object):
         self.createdDateTime = kwargs.get('createdDateTime')
 
     def getColumns(self):
-        pass
+        response = self.site.client.getResponse('list_columns',
+                                           siteId=self.site.siteId,
+                                           listId=self.id)
+        columns = []
+        if response.ok:
+            data = json.loads(response.text)
+            for col in data.get('value'):
+                coltype = self.selectColumnClass(col)
+                columns.append(coltype(**col))
+        return columns
 
     def selectColumnClass(self, column):
         choices = {'boolean': SharepointBooleanColumn,
@@ -99,7 +108,7 @@ class SharepointList(object):
                    'text': SharepointTextColumn,
                 }
         for k,v in choices.items():
-            if column.get('k'):
+            if column.get(k):
                 return v
         return SharepointColumn
 
@@ -128,6 +137,7 @@ class SharepointItem(object):
 class SharepointColumn(object):
 
     def __init__(self, **kwargs):
+        self.data = kwargs
         self.id = kwargs.get('id')
         self.description = kwargs.get('description')
         self.columnGroup = kwargs.get('columnGroup')
@@ -161,7 +171,8 @@ class SharepointCalculatedColumn(SharepointColumn):
 class SharepointChoiceColumn(SharepointColumn):
 
     def __init__(self, **kwargs):
-        self.type_properties(self.kwargs.get('choice', {}))
+        super(SharepointChoiceColumn, self).__init__()
+        self.type_properties = kwargs.get('choice', {})
 
 
 class SharepointCurrencyColumn(SharepointColumn):
@@ -171,28 +182,33 @@ class SharepointCurrencyColumn(SharepointColumn):
 class SharepointDateTimeColumn(SharepointColumn):
 
     def __init__(self, **kwargs):
-        self.type_properties(self.kwargs.get('dateTime', {}))
+        super(SharepointDateTimeColumn, self).__init__()
+        self.type_properties = kwargs.get('dateTime', {})
 
 
 class SharepointLookupColumn(SharepointColumn):
 
     def __init__(self, **kwargs):
-        self.type_properties(self.kwargs.get('lookup', {}))
+        super(SharepointLookupColumn, self).__init__()
+        self.type_properties = kwargs.get('lookup', {})
 
 
 class SharepointNumberColumn(SharepointColumn):
 
     def __init__(self, **kwargs):
-        self.type_properties(self.kwargs.get('number', {}))
+        super(SharepointNumberColumn, self).__init__()
+        self.type_properties = kwargs.get('number', {})
 
 
 class SharepointPersonOrGroupColumn(SharepointColumn):
 
     def __init__(self, **kwargs):
-        self.type_properties(self.kwargs.get('personOrGroup', {}))
+        super(SharepointPersonOrGroupColumn, self).__init__()
+        self.type_properties = kwargs.get('personOrGroup', {})
 
 
 class SharepointTextColumn(SharepointColumn):
 
     def __init__(self, **kwargs):
-        self.type_properties(self.kwargs.get('text', {}))
+        super(SharepointTextColumn, self).__init__()
+        self.type_properties = kwargs.get('text', {})
