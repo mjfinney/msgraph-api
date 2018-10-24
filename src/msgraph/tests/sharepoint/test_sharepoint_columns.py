@@ -57,7 +57,7 @@ class TestSharepointColumns(object):
     
         assert l.displayName == "Documents"
 
-    def test_getListItems(self, sharepoint, site_data):
+    def test_getItems(self, sharepoint, site_data):
         responseData = site_data[0]
         responseJson = site_data[1]
         listId = '71c37c1b-521b-4a02-ad97-be467b796f0b'
@@ -86,7 +86,7 @@ class TestSharepointColumns(object):
 
             site = sharepoint.getSiteById(siteId)
             l = site.getListById(listId)
-            items = l.getItems(listId)
+            items = l.getItems()
     
         print items
         assert items[0].fields['Title'] == response_items[0]['fields']['Title']

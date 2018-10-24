@@ -103,10 +103,10 @@ class SharepointList(object):
                 return v
         return SharepointColumn
 
-    def getItems(self, listId):
+    def getItems(self):
         response = self.site.client.getResponse('list_items_with_values',
                                            siteId=self.site.siteId,
-                                           listId=listId)
+                                           listId=self.id)
         items = []
         if response.ok:
             data = json.loads(response.text)
@@ -119,9 +119,6 @@ class SharepointItem(object):
 
     def __init__(self, **kwargs):
         self.id = kwargs.get('id')
-        self.name = kwargs.get('name')
-        self.displayName = kwargs.get('displayName')
-        self.description = kwargs.get('description')
         self.webUrl = kwargs.get('webUrl')
         self.lastModifiedDateTime = kwargs.get('lastModifiedDateTime')
         self.createdDateTime = kwargs.get('createdDateTime')
