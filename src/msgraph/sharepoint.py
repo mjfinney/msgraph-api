@@ -4,6 +4,8 @@ import requests
 
 from msgraph.constants import GRAPH_URL, GRAPH_VERSION, LOGIN_URL, LOGIN_VERSION, LOGIN_ENDPOINTS, GRAPH_ENDPOINTS
 
+from msgraph.drives import Drive
+
 
 class Sharepoint(object):
 
@@ -72,6 +74,17 @@ class SharepointSite(object):
             l = SharepointList(self, **json.loads(response.text))
 
         return l
+
+    def getDrives(self):
+        drivesList = []
+        response = self.client.getResponse('list_drives', siteId=self.siteId)
+        if response.ok:
+            data = json.loads(response.text)
+            for d in data.get('value'):
+                drivesList.append(Drive(self, **d))
+
+        return drivesList
+
 
 
 class SharepointList(object):

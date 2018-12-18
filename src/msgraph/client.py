@@ -31,6 +31,16 @@ class Client(object):
             self.token = self.getToken()
         headers = {'Authorization': self.token.token_type + ' ' + self.token.access_token}
 
+        extra_headers = kwargs.get('headers', {})
+        method = kwargs.get('method', 'GET')
+        if extra_headers:
+            if method == 'PUT' and not extra_headers.get('Content-Type'):
+                extra_headers['Content-Type'] = 'application/json'
+            headers.update(extra_headers)
+        if method == 'PUT':
+            return requests.put(self.getEndpoint(endpoint, **kwargs),
+                        headers=headers,
+                        data=kwargs.get('data', ''))
         if endpoint == 'next':
             return requests.get(kwargs.get('url'), headers=headers)
 
