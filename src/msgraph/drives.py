@@ -25,8 +25,5 @@ class Drive(object):
                                            filename=filename,
                                            data=data,
                                            location=location)
-        if response.ok:
-            return response
-        else:
-            return False
+        return response
 
