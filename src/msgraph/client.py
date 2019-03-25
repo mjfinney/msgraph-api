@@ -37,6 +37,11 @@ class Client(object):
             if method == 'PUT' and not extra_headers.get('Content-Type'):
                 extra_headers['Content-Type'] = 'application/json'
             headers.update(extra_headers)
+        if method == 'POST':
+            headers.update({'Content-Type': 'application/json'})
+            return requests.post(self.getEndpoint(endpoint, **kwargs),
+                        headers=headers,
+                        data=json.dumps(kwargs.get('data', '')))
         if method == 'PUT':
             return requests.put(self.getEndpoint(endpoint, **kwargs),
                         headers=headers,

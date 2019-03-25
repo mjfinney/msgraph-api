@@ -134,13 +134,24 @@ class SharepointList(object):
         if response.ok:
             data = json.loads(response.text)
             for item in data.get('value'):
-                items.append(SharepointItem(**item))
+                items.append(SharepointItem(data, **item))
         return items
+
+    def createItem(self, fields):
+        data = {}
+        data['fields'] = fields
+        response = self.site.client.getResponse('create_item',
+                                                siteId=self.site.siteId,
+                                                listId=self.id,
+                                                data=data,
+                                                method='POST')
+        return response
 
 
 class SharepointItem(object):
 
-    def __init__(self, **kwargs):
+    def __init__(self, data, **kwargs):
+        self.data = data
         self.id = kwargs.get('id')
         self.webUrl = kwargs.get('webUrl')
         self.lastModifiedDateTime = kwargs.get('lastModifiedDateTime')
