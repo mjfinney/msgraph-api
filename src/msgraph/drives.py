@@ -17,8 +17,8 @@ class Drive(object):
         self.driveType = kwargs.get('driveType')
         self.quota = kwargs.get('quota')
 
-    def upload(self, filename, data, location="root:"):
-        headers = {'Content-Type': 'application/xml'}
+    def upload(self, filename, data, content_type, location="root:"):
+        headers = {'Content-Type': content_type}
         response = self.client.getResponse('upload_file',
                                            method='PUT',
                                            driveId=self.id,
@@ -26,4 +26,3 @@ class Drive(object):
                                            data=data,
                                            location=location)
         return response
-
